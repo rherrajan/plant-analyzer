@@ -88,6 +88,7 @@ public class PlantAnalyzer {
 	@RequestMapping("/database")
 	ResponseEntity<String> database() {
 
+		System.out.println(" --- dbUrl: " + dbUrl);
 		
 		try (Connection connection = dataSource.getConnection()) {
 			JSONObject result = readFromDB(connection);

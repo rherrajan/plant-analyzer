@@ -1,0 +1,5 @@
+{
+  "name": "plant-analyzer",
+  "description": "plant picture to plant name converter",
+  "addons": [ "heroku-postgresql" ]
+}
