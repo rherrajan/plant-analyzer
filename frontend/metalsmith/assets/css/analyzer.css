@@ -1,0 +1,34 @@
+body {
+  padding-top: 5rem;
+}
+.greeting {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+.navbar-dark.bg-dark {
+  background-color: #207412 !important;
+}
+.progress-bar.bg-success {
+  background-color: #207412 !important;
+}
+.progress-bar.bg-info {
+  background-color: #47a138 !important;
+}
+.btn-primary {
+    color: #207412;
+    background-color: #ffffff;
+    border-color: #207412;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #207412;
+    background-color: #47a138;
+    border-color: #207412;
+}
+.btn-primary:focus {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(71, 16, 56, 0.6);
+}
+
+.online-status {
+  float: right;
+}
+

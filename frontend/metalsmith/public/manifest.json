@@ -1,6 +1,6 @@
 {
-  "name": "plant-analyzer",
-  "short_name": "plant-analyzer",
+  "name": "plant-detection",
+  "short_name": "plant-detection",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#fff",

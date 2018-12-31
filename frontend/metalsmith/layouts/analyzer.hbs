@@ -1,0 +1,35 @@
+{{> doc-head }}
+<body>
+    {{> header }}
+
+    <main>
+        {{{ contents }}}
+    </main>
+
+
+	<label class="uploadPlant btn btn-primary btn-file">
+		Please select a picture of a plant <br/>
+		<input type="file" multiple id="input" onchange="uploadPlant(this.files);" accept="image/*" >
+	</label>
+
+	<div class="uploadStatus"> waiting for you to upload image </div>
+	
+	<div class="analyseProgress" style="display:none">
+		<div class="progress">
+			<div id="progress-files" class="progress-bar bg-info progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="1" aria-valuemin="0" aria-valuemax="10"></div>
+		</div>
+		<div class="progress">
+			<div id="progress-upload" class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+	</div>
+
+	<div class="analyseResults" style="display:none">
+		<div class="greeting result-greeting">
+			<h2>Results</h2>
+		</div>	
+	</div>
+	
+	
+    {{> footer }}
+</body>
+</html>

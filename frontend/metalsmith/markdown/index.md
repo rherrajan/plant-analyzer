@@ -1,9 +1,9 @@
 ---
-title: Home
-layout: default.hbs
+title: Analyzer
+layout: analyzer.hbs
+description: Upload a picture of a plant you don't know and get its name 123
 menu-order: 1
 ---
 
-# Homepage
+# Plant Analyser
 
-TODO: add content here
