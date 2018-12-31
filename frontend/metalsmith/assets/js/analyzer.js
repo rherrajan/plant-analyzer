@@ -143,10 +143,6 @@ function uploadFile(file, callback, filename, metadata){
 	});
 }
 
-function createBackendURL(path){
-	return "https://plantdetection.herokuapp.com/" + path;
-}
-
 function onUploadFinished(downloadURL, uploadResultTag, analyseResultTag, metadata, callback){
 
 	var plantURL = escape(downloadURL);
@@ -179,8 +175,8 @@ function analysePlant(analyzeURL, analyseButton, callback, metadata){
 	xhttp.onreadystatechange = function() {
 		if (this.readyState == 4) {
 			if(this.status != 200){
-				console.log(" --- got status '" + this.status + "' from this url: " + analyzeURL);
-				alert(" --- " + analyzeURL + ": " + this.status);
+				console.log("got status '" + this.status + "' from this url: " + analyzeURL);
+				alert("server error. Status=" + this.status);
 			} else {
 
 				var resultContainerTag = analyseButton.parentNode;
@@ -254,21 +250,3 @@ function writeAnalyzeResult(analzyeResult, resultContainerTag){
 	}
 }
 
-function checkStatus(){
-
-	var statusURL = createBackendURL("status");
-	var xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function() {
-		if (this.readyState == 4) {
-			if(this.status == 200){
-				document.querySelector('#analyzer-status').setAttribute('class', 'led-green');
-			} else {
-				document.querySelector('#analyzer-status').setAttribute('class', 'led-red');
-			}
-		};
-	}
-
-	xhttp.open("GET", statusURL, true);
-	xhttp.send();
-
-}
