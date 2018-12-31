@@ -1,0 +1,17 @@
+{
+  "name": "plant-analyzer",
+  "short_name": "plant-analyzer",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "Theme_color": "#207412",
+  "description": "plant picture to plant name converter",
+  "icons": [
+    {
+      "src":"assets/icons/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+
+}

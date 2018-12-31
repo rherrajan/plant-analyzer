@@ -1,0 +1,11 @@
+.classpath
+.project
+target/
+bin/
+.settings/
+.idea/
+*.iml
+dist/
+node_modules/
+.npm
+.env

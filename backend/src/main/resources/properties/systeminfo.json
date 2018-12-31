@@ -1,0 +1,5 @@
+{
+  "name": "@pom.name@",
+  "version": "@pom.version@",
+  "buildtime": "@buildtime@"
+}

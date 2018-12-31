@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" role="navigation">
+
+    <a id="led-status" href="/" class="navbar-brand led-blue"></a>
+
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+	<div class="collapse navbar-collapse" id="navbar">
+		<ul class="navbar-nav mr-auto">
+		
+	        {{#each collections.pages}}
+	        <li class="nav-item {{#is this.path @root.path }}active{{/is}}">
+	            {{#if this.path }}
+	            <a class="nav-link" href="/{{ this.path }}/">{{ this.title }}</a>
+	            {{ else }}
+	            <a class="nav-link" href="/">{{ this.title }}</a>
+	            {{/if}}
+	        </li>
+	        {{/each}}
+        
+		</ul>
+	</div>
+		
+</nav>
