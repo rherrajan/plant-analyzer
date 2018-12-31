@@ -209,7 +209,7 @@ function writeAnalyzeResult(analzyeResult, resultContainerTag){
 	if(analzyeResult.status != "OK"){
 
 		var imgTag = document.createElement('img');
-		imgTag.setAttribute('src', "images/death-with-flower.png");
+		imgTag.setAttribute('src', "assets/icons/death-with-flower.png");
 		imgTag.setAttribute('style', 'width:100%');
 		resultContainerTag.appendChild(imgTag);
 
