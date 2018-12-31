@@ -4,13 +4,8 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>tk.icudi</groupId>
-  <artifactId>plant-analyzer</artifactId>
+  <artifactId>plant-analyzer-frontend</artifactId>
+  <name>plant-analyzer-frontend</name>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
-
-  <modules>
-    <module>backend</module>
-    <module>frontend</module>
-  </modules>
 
 </project>
