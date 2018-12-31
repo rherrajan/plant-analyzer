@@ -1,15 +1,14 @@
 function createBackendURL(path){
-	
-	if(window.location.href==="http://localhost:8080/"){
+
+	if(location.hostname==="localhost"){
 		return "http://localhost:5000/" + path;
 	} else {
-		return location.protocol 
+		return location.protocol
 		    + '//'+subdomain(location.hostname)
 		    + '.herokuapp.com/'
 		    + path;
 	}
 
-	
 }
 
 function subdomain(host) {
