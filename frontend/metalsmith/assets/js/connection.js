@@ -1,6 +1,6 @@
 function createBackendURL(path){
 
-	return "http://plant-detection.herokuapp.com/" + path;
+	return "https://plant-detection.herokuapp.com/" + path;
 	
 //	if(location.hostname==="localhost"){
 //		return "http://localhost:5000/" + path;
